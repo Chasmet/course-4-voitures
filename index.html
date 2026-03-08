@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Course 4 Voitures</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="gameWrap">
+      <canvas id="game"></canvas>
+
+      <div id="hud">
+        <div class="hudBox" id="levelBox">Niveau 1</div>
+        <div class="hudBox" id="speedBox">Vitesse 0</div>
+        <div class="hudBox" id="placeBox">Place 1/4</div>
+        <div class="hudBox" id="distBox">0 m</div>
+      </div>
+
+      <div id="message"></div>
+
+      <div id="startOverlay">
+        <div id="startPanel">
+          <h1>Course 4 Voitures</h1>
+          <p>Rouge = toi</p>
+          <p>Jaune, vert, violet = ordinateurs</p>
+          <p>Tu peux toucher les voitures et les bords</p>
+          <p>Évite seulement les obstacles au milieu</p>
+          <button id="startBtn">START</button>
+          <button id="restartBtn" style="display:none; margin-top:10px;">REJOUER</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="controls">
+      <button class="btn" id="leftBtn">GAUCHE</button>
+      <button class="btn" id="rightBtn">DROITE</button>
+      <button class="btn" id="accelBtn">ACCÉLÉRER</button>
+      <button class="btn" id="boostBtn">BOOST</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
